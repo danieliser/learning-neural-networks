@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+r",
+        "command": "python.execInTerminal",
+        "when": "editorLangId == python"
+    },
+    {
+        "key": "ctrl+shift+alt+r",
+        "command": "python.datascience.runFileInteractive",
+        "when": "editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.debug.start",
+        "when": "editorLangId == 'python' && debuggersAvailable && !inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && !inDebugMode"
+    }
+]
