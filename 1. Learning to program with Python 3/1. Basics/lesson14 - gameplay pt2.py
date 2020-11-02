@@ -82,15 +82,9 @@ players = range(int(input("Number of players? "))+1)[1:]
 max_turns = game_size * game_size
 print(max_turns)
 
-def new_game():
-    game = []
-    for i in range(game_size):
-        row = []
-        for i in range(game_size):
-            row.append(0)
-        game.append(row)
 
-    return game
+def new_game():
+    return [[0 for i in range(game_size)] for i in range(game_size)]
 
 
 while play:
